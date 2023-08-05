@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "accountUsername": "",
+    "accountProfileImageUrl": "",
+    "postImageUrl": "",
+    "postHeading": "",
+    "postPrice": 34.20,
+    "noOfLikes": 2,
+    "postDescription": "",
+    "postHashtags": "",
+    "numberOfPostComments": 4,
+    "isLiked": false
+  },
+  {
+    "id": 2,
+    "accountUsername": "",
+    "accountProfileImageUrl": "",
+    "postImageUrl": "",
+    "postHeading": "",
+    "postPrice": 34.20,
+    "noOfLikes": 2,
+    "postDescription": "",
+    "postHashtags": "",
+    "numberOfPostComments": 3,
+    "isLiked": false
+  }
+]
