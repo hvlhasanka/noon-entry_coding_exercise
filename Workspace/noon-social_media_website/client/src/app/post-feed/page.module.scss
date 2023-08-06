@@ -1,0 +1,32 @@
+@import "/src/styles/mixins";
+
+.postFeedContainer {
+  background-color: rgb(233, 233, 233);
+  height: 100vh;
+  overflow-x: scroll;
+
+  @include mobileView() {
+    padding-bottom: 5vh;
+  }
+}
+
+.postFeedContainerContent {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  background-color: rgb(255, 255, 255);
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 5px #d2d2d2;
+
+  @include mobileView() {
+    width: 100%;
+  }
+}
+
+.postFeedCellDivider {
+  border: 1px solid #d2d2d2;
+  margin-bottom: 2%;
+  margin-left: 3%;
+  margin-right: 3%;
+}

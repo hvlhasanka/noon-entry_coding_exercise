@@ -1,16 +1,16 @@
 type Account = {
-  accountUsername: String;
-  accountProfileImageUrl: String;
+  accountUsername: string;
+  accountProfileImageUrl: string;
 };
 
 type Post = {
   id: Number;
-  postImageUrl: String;
-  postHeading: String;
+  postImageUrl: string;
+  postHeading: string;
   postPrice: Number;
   noOfLikes: Number;
-  postDescription: String;
-  postHashtags: String;
+  postDescription: string;
+  postHashtags: string;
   numberOfPostComments: Number;
   isLiked: Boolean;
 } & Account;

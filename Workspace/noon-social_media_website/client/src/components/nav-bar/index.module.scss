@@ -1,0 +1,86 @@
+@import "/src/styles/mixins";
+
+.navBarContainer {
+  @include mobileView() {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(1, 60, 86);
+    position: fixed;
+    bottom: 0;
+  }
+
+  @include desktopView() {
+    height: 100vh;
+    width: 18vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(1, 60, 86);
+    padding-left: 2%;
+    padding-right: 2%;
+    float: left;
+  }
+}
+
+.navBarLinkItemsBox {
+  @include mobileView() {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  @include desktopView() {
+    margin-top: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.navBarLinkItem {
+  @include mobileView() {
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+    padding-right: 20px;
+    background-color: rgb(51, 102, 142);
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+  }
+
+  @include desktopView() {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgb(51, 102, 142);
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+  }
+}
+
+.navBarLinkItemSelected {
+  background-color: rgb(0, 75, 141);
+}
+
+.navBarLinkItem:hover {
+  background-color: rgb(38, 136, 222);
+}
+
+.navBarLinkItemIconSection {
+  color: rgb(230, 244, 255);
+  font-size: 25px;
+}
+
+.navBarLinkItemTextSection {
+  color: rgb(230, 244, 255);
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 5%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+

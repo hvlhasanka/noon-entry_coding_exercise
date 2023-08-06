@@ -1,14 +1,10 @@
-import config from "@/configs/development";
-
-const { baseUrl } = config;
+import React from "react";
 
 const Home = () => {
   return (
-    <>
-      <a href={`${baseUrl}/post-feed`}>Head to Post feed</a>
-      <br />
-      <a href={`${baseUrl}/favorite-posts`}>Head to Favorite posts</a>
-    </>
+    <div className="main">
+      <p>Click an item from the navigation panel</p>
+    </div>
   );
 }
 

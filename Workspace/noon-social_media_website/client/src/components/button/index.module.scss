@@ -1,0 +1,13 @@
+.iconButton {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  height: 3.5vh;
+  width: 3.5vh;
+  border-radius: 10px;
+}
+
+.iconButton:hover {
+  cursor: pointer;
+  background-color: rgb(225, 225, 225);
+}

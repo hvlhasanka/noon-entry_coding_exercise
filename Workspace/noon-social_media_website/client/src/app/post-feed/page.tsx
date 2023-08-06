@@ -2,6 +2,10 @@
 import React, { useEffect, useState } from "react";
 import getPostFeed from "./get-post-feed";
 import { Post } from "@/types";
+import styles from "./page.module.scss";
+import Components from "@/components";
+
+const { PostFeedCell } = Components;
 
 const PostFeed = () => {
   const [feed, setFeed] = useState<Array<Post>>([]);
@@ -25,22 +29,18 @@ const PostFeed = () => {
   }, []);
 
   return (
-    <>
-      <div>{isLoading}
-        {
-          feed?.map((post, index) => (
-            <div key={index}>{
-                post.numberOfPostComments.toString()
-              }
-            </div>
-      ))}
+    <div className={styles.postFeedContainer}>
+      <div className={styles.postFeedContainerContent}>
+        {feed?.map((post, index) => (
+          <div key={index}>
+            <PostFeedCell
+              postDetails={post}
+            />
+            {index !== feed.length - 1 ? <hr className={styles.postFeedCellDivider} /> : null}
+          </div>
+        ))}
       </div>
-      {error && (
-        <div>
-          Error
-        </div>
-      )}
-    </>
+    </div>
   );
 };
 
