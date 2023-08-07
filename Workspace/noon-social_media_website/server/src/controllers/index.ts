@@ -1,7 +1,11 @@
-import getFavoritePosts from "./get-favorite-posts";
-import getPostFeed from "./get-post-feed";
+import getFavoritePostsController from "./get-favorite-posts";
+import getPostFeedController from "./get-post-feed";
+import likePostController from "./like-post";
+import dislikePostController from "./dislike-post";
 
-export default {
-  getPostFeed,
-  getFavoritePosts,
+export {
+  getPostFeedController,
+  getFavoritePostsController,
+  likePostController,
+  dislikePostController,
 };

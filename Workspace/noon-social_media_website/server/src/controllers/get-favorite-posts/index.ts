@@ -1,9 +1,11 @@
-import { Post } from "../../types/index";
-import PostData from "../../data/posts.json";
+import { ProcessedPost } from "../../types/index";
+import data from "../../data/posts.json";
+import { formatPostData } from "../../utils";
 
-const getFavoritePosts = (): Array<Post> | null => {
-  const favoritePosts = PostData.filter(post => post.isLiked);
-  return favoritePosts.length > 0 ? favoritePosts : null;
+const getFavoritePostsController = (): Array<ProcessedPost> | null => {
+  const favoritePosts = data.filter(post => post.isLiked);
+
+  return favoritePosts.length > 0 ? formatPostData(favoritePosts) : null;
 };
 
-export default getFavoritePosts;
+export default getFavoritePostsController;

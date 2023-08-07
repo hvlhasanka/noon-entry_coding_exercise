@@ -1,20 +1,38 @@
+type MetadataData = {
+  createdAt: string;
+  updatedAt: string;
+};
+
+type Metadata = {
+  createdAt: Date;
+  updatedAt: Date;
+};
+
 type Account = {
-  accountUsername: String;
-  accountProfileImageUrl: String;
+  accountUsername: string;
+  accountProfileImageUrl: string;
 };
 
 type Post = {
-  id: Number;
-  postImageUrl: String;
-  postHeading: String;
-  postPrice: Number;
-  noOfLikes: Number;
-  postDescription: String;
-  postHashtags: String;
-  numberOfPostComments: Number;
-  isLiked: Boolean;
-} & Account;
+  id: number;
+  postImageUrl: string;
+  postHeading: string;
+  postPrice: number;
+  noOfLikes: number;
+  postDescription: string;
+  postHashtags: string;
+  numberOfPostComments: number;
+  isLiked: boolean;
+};
+
+type PostData = Post & Account & MetadataData;
+type ProcessedPost = Post & Account & Metadata;
+type SuccessReturn = [boolean, string];
+type ErrorReturn = [boolean, Error];
 
 export type {
-  Post,
+  PostData,
+  ProcessedPost,
+  SuccessReturn,
+  ErrorReturn,
 };

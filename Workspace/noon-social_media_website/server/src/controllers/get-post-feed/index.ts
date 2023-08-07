@@ -1,8 +1,9 @@
-import { Post } from "../../types/index";
-import PostData from "../../data/posts.json";
+import { ProcessedPost } from "../../types/index";
+import data from "../../data/posts.json";
+import { formatPostData } from "../../utils";
 
-const getPostFeed = (): Array<Post> => {
-  return PostData;
+const getPostFeedController = (): Array<ProcessedPost> => {
+  return formatPostData(data);
 };
 
-export default getPostFeed;
+export default getPostFeedController;

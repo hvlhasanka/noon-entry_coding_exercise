@@ -1,13 +1,9 @@
 import config from "../configs/development";
 import express, { Express, Request, Response } from "express";
-import controllers from "../controllers";
 import cors from "cors";
+import { getPostFeedResolver, getFavoritePostsResolver, likePostResolver, dislikePostResolver } from "../resolvers";
 
 const { port: PORT } = config;
-const {
-  getPostFeed,
-  getFavoritePosts,
-} = controllers;
 const app: Express = express();
 
 /**
@@ -23,18 +19,17 @@ app.listen(PORT, () => {
 });
 
 /**
- * Routes
+ * Routes - GET method
  */
-app.get("/noon/api-v1/get-post-feed", (req: Request, res: Response) => {
-  res.json(getPostFeed());
-});
+app.get("/noon/api-v1/get-post-feed", (req: Request, res: Response) => getPostFeedResolver(res));
 
-app.get("/noon/api-v1/get-favorite-posts", (req: Request, res: Response) => {
-  res.json(getFavoritePosts());
-});
+app.get("/noon/api-v1/get-favorite-posts", (req: Request, res: Response) => getFavoritePostsResolver(res));
 
-app.patch("/noon/api-v1/like-post/{id}", (req: Request, res: Response) => {});
+/**
+ * Routes - PATCH method
+ */
+app.patch("/noon/api-v1/like-post/:id", (req: Request, res: Response) => likePostResolver(req, res));
 
-app.patch("/noon/api-v1/dislike-post/{id}", (req: Request, res: Response) => {});
+app.patch("/noon/api-v1/dislike-post/:id", (req: Request, res: Response) => dislikePostResolver(req, res));
 
 export default app;
