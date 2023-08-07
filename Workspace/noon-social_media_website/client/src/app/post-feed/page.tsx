@@ -1,46 +1,40 @@
 "use client"
-import React, { useEffect, useState } from "react";
-import getPostFeed from "./get-post-feed";
-import { Post } from "@/types";
-import styles from "./page.module.scss";
-import Components from "@/components";
 
-const { PostFeedCell } = Components;
+import React, { useEffect, useState } from "react";
+import { Post } from "@/types";
+import { RowLayout } from "@/components";
+import { getPostFeed, likePost } from "@/services";
 
 const PostFeed = () => {
   const [feed, setFeed] = useState<Array<Post>>([]);
   const [isLoading, setIsLoading] = useState<boolean>(false);
-  const [error, setError] = useState<any>();
+  const [isError, setIsError] = useState<boolean>(false);
 
-  const fetchFeedData = async () => {
+  const fetchPostFeedData = async () => {
     setIsLoading(true);
     const [isError, feedData] = await getPostFeed();
     setIsLoading(false);
     if (isError) {
       console.error(isError);
-      setError(feedData);
+      setIsError(feedData);
       return;
     }
     setFeed(feedData as Array<Post>);
   };
 
   useEffect(() => {
-    fetchFeedData();
+    fetchPostFeedData();
   }, []);
 
   return (
-    <div className={styles.postFeedContainer}>
-      <div className={styles.postFeedContainerContent}>
-        {feed?.map((post, index) => (
-          <div key={index}>
-            <PostFeedCell
-              postDetails={post}
-            />
-            {index !== feed.length - 1 ? <hr className={styles.postFeedCellDivider} /> : null}
-          </div>
-        ))}
-      </div>
-    </div>
+    <RowLayout
+      postItems={feed}
+      postItemCellComponentType="POST_FEED_CELL"
+      likePostFunc={likePost}
+      postRefetchFunc={fetchPostFeedData}
+      isLoading={isLoading}
+      isError={isError}
+    />
   );
 };
 

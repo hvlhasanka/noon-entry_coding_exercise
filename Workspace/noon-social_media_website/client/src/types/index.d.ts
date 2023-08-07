@@ -4,15 +4,15 @@ type Account = {
 };
 
 type Post = {
-  id: Number;
+  id: number;
   postImageUrl: string;
   postHeading: string;
-  postPrice: Number;
-  noOfLikes: Number;
+  postPrice: number;
+  noOfLikes: number;
   postDescription: string;
   postHashtags: string;
-  numberOfPostComments: Number;
-  isLiked: Boolean;
+  numberOfPostComments: number;
+  isLiked: boolean;
 } & Account;
 
 export type {

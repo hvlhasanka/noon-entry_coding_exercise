@@ -2,19 +2,17 @@ import React from "react";
 import styles from "./index.module.scss";
 import { Post } from "@/types";
 import Image from "next/image";
-import Components from "..";
-import LikeIcon from "@/assets/images/like-icon.png";
+import { Button } from "..";
+import LikeCheckedImage from "@/assets/images/like-checked.png";
 
 interface Props {
   postDetails: Post;
+  likePostFunc: Function;
+  postRefetchFunc: Function;
 };
 
 const PostFeedCell = (props: Props) => {
-  const { Button } = Components;
-  
-  const {
-    postDetails,
-  } = props;
+  const { postDetails, likePostFunc, postRefetchFunc } = props;
 
   return (
     <div className={styles.postFeedCellContainer}>
@@ -34,7 +32,8 @@ const PostFeedCell = (props: Props) => {
       </div>
       <div className={styles.postFeedCellBody}>
         <Image
-          src={postDetails.postImageUrl} alt="post-image"
+          src={postDetails.postImageUrl}
+          alt="post-image"
           className={styles.postFeedCellPostImage}
           width={50}
           height={50}
@@ -51,13 +50,17 @@ const PostFeedCell = (props: Props) => {
           <Button
             isIconButton
             buttonType="LIKE"
+            onClickActionFunc={likePostFunc}
+            recordId={postDetails.id}
+            refetchFunc={postRefetchFunc}
+            isSelected={postDetails.isLiked || false}
           />
         </div>
       </div>
       <div className={styles.postFeedCellFooter}>
         <div className={styles.postFeedCellLikesCount}>
           <Image
-            src={LikeIcon}
+            src={LikeCheckedImage}
             alt="like-icon"
             className={styles.postFeedCellLikeIcon}
             width={20}

@@ -28,7 +28,13 @@ const NavBar = (props: Props) => {
     <div className={styles.navBarContainer}>
       <div className={styles.navBarLinkItemsBox}>
         {navBarArgs.map((arg) => (
-          <Link key={arg.id} href={arg.url} className={`${styles.navBarLinkItem} ${selectedLink === arg.url && styles.navBarLinkItemSelected}`}>
+          <Link
+            key={arg.id}
+            href={arg.url}
+            className={
+              `${styles.navBarLinkItem} ${selectedLink === arg.url && styles.navBarLinkItemSelected}`
+            }
+          >
             <div className={styles.navBarLinkItemIconSection}>
               {selectedLink === arg.url ? arg.selectedIcon : arg.defaultIcon}
             </div>

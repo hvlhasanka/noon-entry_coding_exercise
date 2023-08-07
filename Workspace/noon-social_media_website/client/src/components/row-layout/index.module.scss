@@ -1,6 +1,6 @@
 @import "/src/styles/mixins";
 
-.postFeedContainer {
+.container {
   background-color: rgb(233, 233, 233);
   height: 100vh;
   overflow-x: scroll;
@@ -10,9 +10,10 @@
   }
 }
 
-.postFeedContainerContent {
+.containerContent {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
   width: 45%;
   background-color: rgb(255, 255, 255);
   margin: auto;
@@ -24,9 +25,14 @@
   }
 }
 
-.postFeedCellDivider {
-  border: 1px solid #d2d2d2;
-  margin-bottom: 2%;
-  margin-left: 3%;
-  margin-right: 3%;
+.loadingSpinnerContainer {
+  position: relative;
+  margin-top: 20%;
+  left: 46%;
+}
+
+.errorBlockContainer {
+  position: relative;
+  margin-top: 20%;
+  left: 15%;
 }

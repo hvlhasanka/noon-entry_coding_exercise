@@ -1,11 +1,9 @@
 import './globals.css'
-import Components from "@/components";
+import { NavBar } from '@/components';
 import { GoHome } from "react-icons/go";
 import { GoHomeFill } from "react-icons/go";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
 import { MdOutlineFavorite } from "react-icons/md";
-
-const { NavBar } = Components;
 
 const navBarArgs = [
   {
