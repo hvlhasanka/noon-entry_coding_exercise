@@ -1,0 +1,30 @@
+@import "/src/styles/variables";
+
+.emptyContainer {
+  height: 20vh;
+  padding: 5%;
+  margin: 10%;
+  border: 2px solid #005e80;
+  background-color: #4cbae1;
+  border-radius: 10px;
+  position: relative;
+}
+
+.emptyContainerImage {
+  width: 15vh;
+  height: 15vh;
+  position: absolute;
+  left: 50%;
+  top: 48%;
+  transform: translate(-50%, -52%);
+}
+
+.emptyContainerText {
+  margin-top: 2%;
+  position: absolute;
+  left: 50%;
+  top: 83%;
+  transform: translate(-50%, -17%);
+  font-weight: 500;
+  font-family: $defaultFontFamily;
+}

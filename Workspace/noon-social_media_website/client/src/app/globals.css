@@ -1,0 +1,7 @@
+/* StyleSheet for Global level */
+
+/* Reset page document to default margin and padding to full page window */
+* {
+  margin: 0px;
+  padding: 0px;
+}

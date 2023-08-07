@@ -1,0 +1,38 @@
+@import "/src/styles/mixins";
+
+.container {
+  background-color: rgb(233, 233, 233);
+  height: 100vh;
+  overflow-x: scroll;
+
+  @include mobileView() {
+    padding-bottom: 5vh;
+  }
+}
+
+.containerContent {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 45%;
+  background-color: rgb(255, 255, 255);
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 5px #d2d2d2;
+
+  @include mobileView() {
+    width: 100%;
+  }
+}
+
+.loadingSpinnerContainer {
+  position: relative;
+  margin-top: 20%;
+  left: 46%;
+}
+
+.errorBlockContainer {
+  position: relative;
+  margin-top: 20%;
+  left: 15%;
+}
