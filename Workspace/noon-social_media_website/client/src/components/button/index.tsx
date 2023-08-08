@@ -34,7 +34,7 @@ const Button = (props: Props) => {
         await refetchFunc();
       }
     } else {
-      alert("Post already liked");
+      alert("You have already liked this post");
     }
   };
 
@@ -55,7 +55,9 @@ const Button = (props: Props) => {
       <Image
         onClick={buttonOnClick}
         className={
-          `${styles.iconButton} ${buttonType === "LIKE" && styles.iconLikeButton} ${buttonType === "DISLIKE" && styles.iconDislikeButton}`}
+          `${styles.iconButton}
+          ${buttonType === "LIKE" && styles.iconLikeButton}
+          ${buttonType === "DISLIKE" && styles.iconDislikeButton}`}
         src={getImageSrc()}
         width={100}
         height={100}
