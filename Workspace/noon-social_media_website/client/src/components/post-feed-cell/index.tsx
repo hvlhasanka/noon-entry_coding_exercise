@@ -4,7 +4,6 @@ import { Post } from "@/types";
 import Image from "next/image";
 import { Button } from "..";
 import LikeCheckedImage from "@/assets/images/like-checked.png";
-import logo from "@/assets/images/empty-box.png";
 
 interface Props {
   postDetails: Post;
@@ -20,7 +19,7 @@ const PostFeedCell = (props: Props) => {
       <div className={styles.postFeedCellHeader}>
         <div className={styles.postFeedCellAccountDetails}>
           <Image
-            src={postDetails.accountProfileImageUrl || logo}
+            src={postDetails.accountProfileImageUrl}
             alt="profile-image"
             className={styles.postFeedCellAccountProfileImage}
             width={30}
@@ -33,11 +32,11 @@ const PostFeedCell = (props: Props) => {
       </div>
       <div className={styles.postFeedCellBody}>
         <Image
-          src={postDetails.postImageUrl || logo}
+          src={postDetails.postImageUrl}
           alt="post-image"
           className={styles.postFeedCellPostImage}
-          width={50}
-          height={50}
+          width={300}
+          height={300}
         />
         <div className={styles.postFeedCellPostDetails}>
           <p className={styles.postFeedCellPostHeading}>
