@@ -5,11 +5,12 @@
   height: 3.5vh;
   width: 3.5vh;
   border-radius: 10px;
+  padding: 5px;
 }
 
 .iconButton:hover {
   cursor: pointer;
-  background-color: rgb(225, 225, 225);
+  background-color: #e04e5f;
 }
 
 .iconDislikeButton {
