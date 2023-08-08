@@ -42,6 +42,8 @@
 </p>
 <p align="center">Figure 1.5: Image by <a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Smashicons - Flaticon</a></p>
 
+<hr>
+
 ### 2. Dummy data post images
 
 2.1. Workspace/dummy-data-assets/images/post-images/sample-one.jpg => 
@@ -83,6 +85,8 @@
   </kbd>
 </p>
 <p align="center">Figure 2.5: Image by <a href="https://www.freepik.com/free-photo/levitating-music-headphones-display_33140234.htm#query=products&position=0&from_view=search&track=sph">Freepik</a></p>
+
+<hr>
 
 ### 3. Client-side NextJS app images
 
