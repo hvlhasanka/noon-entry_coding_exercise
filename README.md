@@ -4,9 +4,20 @@
 
 ## Table of Contents
 
+[1. App Description](#1-app-description--)<br>
+[2. System Architecture](#2-system-architecture--)<br>
+[3. Consumed Technologies, Tools and Dependencies](#3-consumed-technologies-tools-and-dependencies--)<br>
+[4. Installation (NextJS and Express apps)](#4-installation-nextjs-and-express-apps--)<br>
+[5. Managing the Source Code](#5-managing-the-source-code--)<br>
+[6. Usage](#6-usage--)<br>
+[7. Application Designing - Low-fidelity Wireframes](#7-application-designing---low-fidelity-wireframes)<br>
+[8. Git Commit Strategy](#8-git-commit-strategy--)<br>
+[9. Credits](#9-credits--)<br>
+[10. License](#10-license--)<br>
+
 ## Documentation
 
-### 1. App Description
+### 1. App Description -
 This is a web application built on top of the Client/server architecture to deliver its end-user an interactive user experience. Allowing to view posts feed and like individual posts depending on their preference.<br/>
 There are two web pages to this web application,
 1. Landing page => Home => Shows the post feed and each post has a "Like" button
