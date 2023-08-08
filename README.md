@@ -15,10 +15,10 @@ There are two web pages to this web application,
 ### 2. System Architecture -
 <p align="center">
   <kbd>
-    <img src="" width="60%" />
+    <img src="./Documentation/System-Architecture-Diagram/system-architecture-diagram.png" />
   </kbd>
 </p>
-<p>Figure 2.1: System Architecture Diagram</p>
+<p align="center">Figure 2.1: System Architecture Diagram</p>
 
 ### 3. Consumed Technologies, Tools and Dependencies -
 * Programming Languages -
@@ -55,15 +55,15 @@ Client-side app's source code is located in =>
 ```
   noon-entry_coding_exercise -> Workspace -> noon-social_media_website -> client
 ```
-Source code component hierarchy =>
+Source code structure =>
 <p align="center">
   <kbd>
-      <img src="" width="50%" />
+      <img src="./Documentation/Source-code-Structure/source-code-structure-client-side-app.png" />
   </kbd>
 </p>
-<p align="center">Figure 5.1: Client-side app (NextJS) component hierarchy</p>
+<p align="center">Figure 5.1: Client-side app (NextJS) Source Code Structure</p>
 
-#### Server-side app (Express)
+#### Server-side app (Express) (NodeJS)
 
 Server-side app's source code is located in =>
 ```
@@ -72,10 +72,10 @@ Server-side app's source code is located in =>
 Source code component hierarchy =>
 <p align="center">
   <kbd>
-      <img src="" width="50%" />
+      <img src="./Documentation/Source-code-Structure/source-code-structure-server-side-app.png" />
   </kbd>
 </p>
-<p align="center">Figure 5.2: Server-side app (Express) component hierarchy</p>
+<p align="center">Figure 5.2: Server-side app (Express) (NodeJS) Source Code Structure</p>
 
 ### 6. Usage -
   #### 6.1. Functional features of the Web Application -
@@ -97,7 +97,24 @@ Source code component hierarchy =>
   #### 6.3. Screenshots of the noon Social Network Website (Web App) -
   ##### 6.3.1. 
 
-### 7. Git Commit Strategy -
+### 7. Application Designing - Low-fidelity Wireframes
+  #### 7.1. Mobile view =>
+<p align="center">
+  <kbd>
+      <img src="./Documentation/Low-fidelity-Wireframes/low-fidelity-wireframe-mobile-view.png" />
+  </kbd>
+</p>
+<p align="center">Figure 7.1.1: Application Mobile View Low-fidelity Wireframe</p>
+
+  #### 7.2. Desktop view =>
+<p align="center">
+  <kbd>
+      <img src="./Documentation/Low-fidelity-Wireframes/low-fidelity-wireframe-desktop-view.png" />
+  </kbd>
+</p>
+<p align="center">Figure 7.2.1: Application Desktop View Low-fidelity Wireframe</p>
+
+### 8. Git Commit Strategy -
 
 This repository contains two branches, main and develop. In the duration of the development of the source code and documentation, change commits were pushed to the develop branch. <br/>
 The contents of the develop branch were reviewed in groups and merged into the main branch. <br/>
@@ -107,17 +124,17 @@ As shown in the below table, commits were pushed incrementally, <br/>
 | v1 | Group 1 - Documentation | Design low-fidelity wireframes |
 | v1 | Group 2 - Back-end | Setup NodeJS server application |
 | v1 | Group 3 - Front-end | Setup NextJS client application |
-<p align="center">Table 7.1: Git Commit Strategy 
+<p align="center">Table 8.1: Git Commit Strategy 
 
-### 8. Credits -
+### 9. Credits -
 This project to build a sample social network website was developed for the entry evaluation process at noon. The functional requirements were provided by noon.<br>
 The project was developed using the best practices and guidance with the use of legitimate online documentation (docs) and YouTube videos.<br>
 For learning purposes, other developers' source codes were reviewed on sample applications built and documented online.<br>
 Documentation and source code in this repository was developed by H.V.L.Hasanka.
 
-#### 8.1. Images -
+#### 9.1. Images -
 * 
 
-### 9. License -
+### 10. License -
 Copyright (c) 2023 H.V.L.Hasanka<br>
 Licensed under MIT License
