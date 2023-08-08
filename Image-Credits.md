@@ -130,6 +130,8 @@
 </p>
 <p align="center">Figure 3.5: Image by <a href="https://www.flaticon.com/free-icons/heart" title="heart icons">Heart icons created by Roundicons - Flaticon</a></p>
 
+<hr>
+
 ### 4. Client-side NextJS app loading spinner
 
 4.1. Workspace/noon-social_media_website/client/src/assets/loading-spinner.svg =>
