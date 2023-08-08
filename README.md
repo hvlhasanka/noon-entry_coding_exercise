@@ -110,7 +110,13 @@ As shown in the below table, commits were pushed incrementally, <br/>
 <p align="center">Table 7.1: Git Commit Strategy 
 
 ### 8. Credits -
-Documentation and source code in this reponsitory was development by H.V.L.Hasanka.
+This project to build a sample social network website was developed for the entry evaluation process at noon. The functional requirements were provided by noon.<br>
+The project was developed using the best practices and guidance with the use of legitimate online documentation (docs) and YouTube videos.<br>
+For learning purposes, other developers' source codes were reviewed on sample applications built and documented online.<br>
+Documentation and source code in this repository was developed by H.V.L.Hasanka.
+
+#### 8.1. Images -
+* 
 
 ### 9. License -
 Copyright (c) 2023 H.V.L.Hasanka<br>
