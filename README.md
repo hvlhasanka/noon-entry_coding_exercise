@@ -143,8 +143,7 @@ The project was developed using the best practices and guidance with the use of 
 For learning purposes, other developers' source codes were reviewed on sample applications built and documented online.<br>
 Documentation and source code in this repository was developed by H.V.L.Hasanka.
 
-#### 9.1. Images -
-* 
+Extended credits => <a href="./Image-Credits.md">Image credits</a>
 
 ### 10. License -
 Copyright (c) 2023 H.V.L.Hasanka<br>
