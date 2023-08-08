@@ -1,4 +1,4 @@
-import Axios from "axios";
+import axios from "axios";
 import config from "@/configs/development";
 import { likePostPathname } from "@/pathnames";
 
@@ -10,7 +10,7 @@ const { apiBaseUrl } = config;
 const likePost = async (id: number): Promise<SuccessResponse | ErrorResponse> => {
   let responseData: any;
 
-  await Axios.patch(`${apiBaseUrl}${likePostPathname}/${id}`).then(response => {
+  await axios.patch(`${apiBaseUrl}${likePostPathname}/${id}`).then(response => {
     responseData = response;
   }).catch(error => {
     console.error("error: ", error);

@@ -7,10 +7,10 @@ import Image from "next/image";
 interface Props {
   postDetails: Post;
   dislikePostFunc: Function;
-  postRefetchFunc: Function;
+  postRefetchFunc: () => Promise<void>;
 }
 
-const FavoritePostsCell = (props: Props) => {
+const LikedPostsCell = (props: Props) => {
   const {
     postDetails,
     dislikePostFunc,
@@ -18,40 +18,39 @@ const FavoritePostsCell = (props: Props) => {
   } = props;
 
   return (
-    <div className={styles.favoritePostsCellContainer}>
-      <div className={styles.favoritePostsCellHeader}>
-        <div className={styles.favoritePostsCellAccountDetails}>
+    <div className={styles.likedPostsCellContainer}>
+      <div className={styles.likedPostsCellHeader}>
+        <div className={styles.likedPostsCellAccountDetails}>
           <Image
             src={postDetails.accountProfileImageUrl}
             alt="profile-image"
-            className={styles.favoritePostsCellAccountProfileImage}
+            className={styles.likedPostsCellAccountProfileImage}
             width={30}
             height={30}
           />
-          <p className={styles.favoritePostsCellAccountUsername}>
+          <p className={styles.likedPostsCellAccountUsername}>
             {postDetails.accountUsername}
           </p>
         </div>
       </div>
-      <div className={styles.favoritePostsCellBody}>
+      <div className={styles.likedPostsCellBody}>
         <Image
           src={postDetails.postImageUrl}
           alt="post-image"
-          className={styles.favoritePostsCellPostImage}
+          className={styles.likedPostsCellPostImage}
           width={50}
           height={50}
         />
-        <div className={styles.favoritePostsCellPostDetails}>
-          <p className={styles.favoritePostsCellPostHeading}>
+        <div className={styles.likedPostsCellPostDetails}>
+          <p className={styles.likedPostsCellPostHeading}>
             {postDetails.postHeading}
           </p>
-          <p className={styles.favoritePostsCellPostPrice}>
+          <p className={styles.likedPostsCellPostPrice}>
             {`AED ${postDetails.postPrice.toString()}`}
           </p>
         </div>
-        <div className={styles.favoritePostsCellDislikeButton}>
+        <div className={styles.likedPostsCellDislikeButton}>
           <Button
-            isIconButton
             buttonType="DISLIKE"
             onClickActionFunc={dislikePostFunc}
             recordId={postDetails.id}
@@ -63,4 +62,4 @@ const FavoritePostsCell = (props: Props) => {
   );
 };
 
-export default FavoritePostsCell;
+export default LikedPostsCell;
