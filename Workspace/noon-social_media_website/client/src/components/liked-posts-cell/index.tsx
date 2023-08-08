@@ -38,8 +38,8 @@ const LikedPostsCell = (props: Props) => {
           src={postDetails.postImageUrl}
           alt="post-image"
           className={styles.likedPostsCellPostImage}
-          width={50}
-          height={50}
+          width={100}
+          height={100}
         />
         <div className={styles.likedPostsCellPostDetails}>
           <p className={styles.likedPostsCellPostHeading}>

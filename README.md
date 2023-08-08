@@ -23,6 +23,11 @@ There are two web pages to this web application,
 1. Landing page => Home => Shows the post feed and each post has a "Like" button
 2. Liked page => Shows the posts that were liked by the current end-user and each post has a "Dislike" button
 
+#### 1.1. App host configuration -
+- Client-side application => <a href="https://noon-social-network.netlify.app">noon - Social Network</a> -> [![Netlify Status](https://api.netlify.com/api/v1/badges/500250a6-6b83-42e7-aed6-cd3a42f421b1/deploy-status)](https://app.netlify.com/sites/noon-social-network/deploys) <br>
+- Server-side application => <a href="https://noon-api-v1.onrender.com">noon api v1</a><br>
+  - Eg: <a href="https://noon-api-v1.onrender.com/noon/api-v1/get-post-feed">get-post-feed endpoint</a> 
+
 ### 2. System Architecture -
 <p align="center">
   <kbd>
@@ -143,8 +148,7 @@ The project was developed using the best practices and guidance with the use of 
 For learning purposes, other developers' source codes were reviewed on sample applications built and documented online.<br>
 Documentation and source code in this repository was developed by H.V.L.Hasanka.
 
-#### 9.1. Images -
-* 
+Extended credits => <a href="./Image-Credits.md">Image credits</a>
 
 ### 10. License -
 Copyright (c) 2023 H.V.L.Hasanka<br>
