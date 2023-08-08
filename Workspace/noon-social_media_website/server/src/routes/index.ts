@@ -1,4 +1,4 @@
-import config from "../configs/development";
+import config from "../configs";
 import express, { Express, Request, Response } from "express";
 import cors from "cors";
 import { getPostFeedResolver, getLikedPostsResolver, likePostResolver, dislikePostResolver } from "../resolvers";

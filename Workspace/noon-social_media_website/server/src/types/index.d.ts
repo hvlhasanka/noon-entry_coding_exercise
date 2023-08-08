@@ -1,3 +1,7 @@
+type Configs = {
+  port: number;
+}
+
 type MetadataData = {
   createdAt: string;
   updatedAt: string;
@@ -31,6 +35,7 @@ type SuccessReturn = [boolean, string];
 type ErrorReturn = [boolean, Error];
 
 export type {
+  Configs,
   PostData,
   ProcessedPost,
   SuccessReturn,
