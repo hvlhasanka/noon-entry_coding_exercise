@@ -2,11 +2,12 @@
   "name": "server",
   "version": "1.0.0",
   "description": "Centralized server for, noon Social Media Website",
-  "main": "src/index.ts",
+  "main": "src/routes/index.ts",
   "scripts": {
     "start": "node dist/routes/index",
     "start:dev": "nodemon src/routes/index",
     "build": "npx tsc",
+    "build:start": "npx tsc && node dist/routes/index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "H.V.L.Hasanka",

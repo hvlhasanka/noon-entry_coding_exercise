@@ -4,9 +4,20 @@
 
 ## Table of Contents
 
+[1. App Description](#1-app-description--)<br>
+[2. System Architecture](#2-system-architecture--)<br>
+[3. Consumed Technologies, Tools and Dependencies](#3-consumed-technologies-tools-and-dependencies--)<br>
+[4. Installation (NextJS and Express apps)](#4-installation-nextjs-and-express-apps--)<br>
+[5. Managing the Source Code](#5-managing-the-source-code--)<br>
+[6. Usage](#6-usage--)<br>
+[7. Application Designing - Low-fidelity Wireframes](#7-application-designing---low-fidelity-wireframes)<br>
+[8. Git Commit Strategy](#8-git-commit-strategy--)<br>
+[9. Credits](#9-credits--)<br>
+[10. License](#10-license--)<br>
+
 ## Documentation
 
-### 1. App Description
+### 1. App Description -
 This is a web application built on top of the Client/server architecture to deliver its end-user an interactive user experience. Allowing to view posts feed and like individual posts depending on their preference.<br/>
 There are two web pages to this web application,
 1. Landing page => Home => Shows the post feed and each post has a "Like" button
@@ -15,10 +26,10 @@ There are two web pages to this web application,
 ### 2. System Architecture -
 <p align="center">
   <kbd>
-    <img src="" width="60%" />
+    <img src="./Documentation/System-Architecture-Diagram/system-architecture-diagram.png" />
   </kbd>
 </p>
-<p>Figure 2.1: System Architecture Diagram</p>
+<p align="center">Figure 2.1: System Architecture Diagram</p>
 
 ### 3. Consumed Technologies, Tools and Dependencies -
 * Programming Languages -
@@ -55,15 +66,16 @@ Client-side app's source code is located in =>
 ```
   noon-entry_coding_exercise -> Workspace -> noon-social_media_website -> client
 ```
-Source code component hierarchy =>
+
+Source code structure =>
 <p align="center">
   <kbd>
-      <img src="" width="50%" />
+      <img src="./Documentation/Source-code-Structure/source-code-structure-client-side-app.png" />
   </kbd>
 </p>
-<p align="center">Figure 5.1: Client-side app (NextJS) component hierarchy</p>
+<p align="center">Figure 5.1: Client-side app (NextJS) Source Code Structure</p>
 
-#### Server-side app (Express)
+#### Server-side app (Express) (NodeJS)
 
 Server-side app's source code is located in =>
 ```
@@ -72,10 +84,10 @@ Server-side app's source code is located in =>
 Source code component hierarchy =>
 <p align="center">
   <kbd>
-      <img src="" width="50%" />
+      <img src="./Documentation/Source-code-Structure/source-code-structure-server-side-app.png" />
   </kbd>
 </p>
-<p align="center">Figure 5.2: Server-side app (Express) component hierarchy</p>
+<p align="center">Figure 5.2: Server-side app (Express) (NodeJS) Source Code Structure</p>
 
 ### 6. Usage -
   #### 6.1. Functional features of the Web Application -
@@ -97,8 +109,24 @@ Source code component hierarchy =>
   #### 6.3. Screenshots of the noon Social Network Website (Web App) -
   ##### 6.3.1. 
 
-### 7. Git Commit Strategy -
+### 7. Application Designing - Low-fidelity Wireframes
+  #### 7.1. Mobile view =>
+<p align="center">
+  <kbd>
+      <img src="./Documentation/Low-fidelity-Wireframes/low-fidelity-wireframe-mobile-view.png" />
+  </kbd>
+</p>
+<p align="center">Figure 7.1.1: Application Mobile View Low-fidelity Wireframe</p>
 
+  #### 7.2. Desktop view =>
+<p align="center">
+  <kbd>
+      <img src="./Documentation/Low-fidelity-Wireframes/low-fidelity-wireframe-desktop-view.png" />
+  </kbd>
+</p>
+<p align="center">Figure 7.2.1: Application Desktop View Low-fidelity Wireframe</p>
+
+### 8. Git Commit Strategy -
 This repository contains two branches, main and develop. In the duration of the development of the source code and documentation, change commits were pushed to the develop branch. <br/>
 The contents of the develop branch were reviewed in groups and merged into the main branch. <br/>
 As shown in the below table, commits were pushed incrementally, <br/>
@@ -107,17 +135,17 @@ As shown in the below table, commits were pushed incrementally, <br/>
 | v1 | Group 1 - Documentation | Design low-fidelity wireframes |
 | v1 | Group 2 - Back-end | Setup NodeJS server application |
 | v1 | Group 3 - Front-end | Setup NextJS client application |
-<p align="center">Table 7.1: Git Commit Strategy 
+<p align="center">Table 8.1: Git Commit Strategy 
 
-### 8. Credits -
+### 9. Credits -
 This project to build a sample social network website was developed for the entry evaluation process at noon. The functional requirements were provided by noon.<br>
 The project was developed using the best practices and guidance with the use of legitimate online documentation (docs) and YouTube videos.<br>
 For learning purposes, other developers' source codes were reviewed on sample applications built and documented online.<br>
 Documentation and source code in this repository was developed by H.V.L.Hasanka.
 
-#### 8.1. Images -
+#### 9.1. Images -
 * 
 
-### 9. License -
+### 10. License -
 Copyright (c) 2023 H.V.L.Hasanka<br>
 Licensed under MIT License
