@@ -66,6 +66,7 @@ Client-side app's source code is located in =>
 ```
   noon-entry_coding_exercise -> Workspace -> noon-social_media_website -> client
 ```
+
 Source code structure =>
 <p align="center">
   <kbd>
@@ -126,7 +127,6 @@ Source code component hierarchy =>
 <p align="center">Figure 7.2.1: Application Desktop View Low-fidelity Wireframe</p>
 
 ### 8. Git Commit Strategy -
-
 This repository contains two branches, main and develop. In the duration of the development of the source code and documentation, change commits were pushed to the develop branch. <br/>
 The contents of the develop branch were reviewed in groups and merged into the main branch. <br/>
 As shown in the below table, commits were pushed incrementally, <br/>
