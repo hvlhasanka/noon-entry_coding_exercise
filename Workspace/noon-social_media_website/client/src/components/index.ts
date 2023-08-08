@@ -1,7 +1,7 @@
 import NavBar from "./nav-bar";
 import PostFeedCell from "./post-feed-cell";
 import Button from "./button";
-import FavoritePostsCell from "./favorite-posts-cell";
+import LikedPostsCell from "./liked-posts-cell";
 import Divider from "./divider";
 import RowLayout from "./row-layout";
 import EmptyContainer from "./empty-container";
@@ -12,7 +12,7 @@ export {
   NavBar,
   PostFeedCell,
   Button,
-  FavoritePostsCell,
+  LikedPostsCell,
   Divider,
   RowLayout,
   EmptyContainer,

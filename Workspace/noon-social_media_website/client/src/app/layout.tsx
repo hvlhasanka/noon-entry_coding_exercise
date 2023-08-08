@@ -9,14 +9,14 @@ const navBarArgs = [
   {
     id: 1,
     title: "Home",
-    url: "/post-feed",
+    url: "/",
     defaultIcon: <GoHome />,
     selectedIcon: <GoHomeFill />,
   },
   {
     id: 2,
-    title: "Favorites",
-    url: "/favorite-posts",
+    title: "Liked",
+    url: "/liked-posts",
     defaultIcon: <MdOutlineFavoriteBorder />,
     selectedIcon: <MdOutlineFavorite />,
   },

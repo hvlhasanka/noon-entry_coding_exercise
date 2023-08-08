@@ -4,11 +4,12 @@ import { Post } from "@/types";
 import Image from "next/image";
 import { Button } from "..";
 import LikeCheckedImage from "@/assets/images/like-checked.png";
+import logo from "@/assets/images/empty-box.png";
 
 interface Props {
   postDetails: Post;
   likePostFunc: Function;
-  postRefetchFunc: Function;
+  postRefetchFunc: () => Promise<void>;
 };
 
 const PostFeedCell = (props: Props) => {
@@ -19,7 +20,7 @@ const PostFeedCell = (props: Props) => {
       <div className={styles.postFeedCellHeader}>
         <div className={styles.postFeedCellAccountDetails}>
           <Image
-            src={postDetails.accountProfileImageUrl}
+            src={postDetails.accountProfileImageUrl || logo}
             alt="profile-image"
             className={styles.postFeedCellAccountProfileImage}
             width={30}
@@ -32,7 +33,7 @@ const PostFeedCell = (props: Props) => {
       </div>
       <div className={styles.postFeedCellBody}>
         <Image
-          src={postDetails.postImageUrl}
+          src={postDetails.postImageUrl || logo}
           alt="post-image"
           className={styles.postFeedCellPostImage}
           width={50}
@@ -48,7 +49,6 @@ const PostFeedCell = (props: Props) => {
         </div>
         <div className={styles.postFeedCellLikeButton}>
           <Button
-            isIconButton
             buttonType="LIKE"
             onClickActionFunc={likePostFunc}
             recordId={postDetails.id}

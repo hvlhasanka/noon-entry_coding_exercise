@@ -1,7 +1,7 @@
 import config from "../configs/development";
 import express, { Express, Request, Response } from "express";
 import cors from "cors";
-import { getPostFeedResolver, getFavoritePostsResolver, likePostResolver, dislikePostResolver } from "../resolvers";
+import { getPostFeedResolver, getLikedPostsResolver, likePostResolver, dislikePostResolver } from "../resolvers";
 
 const { port: PORT } = config;
 const app: Express = express();
@@ -23,7 +23,7 @@ app.listen(PORT, () => {
  */
 app.get("/noon/api-v1/get-post-feed", (req: Request, res: Response) => getPostFeedResolver(res));
 
-app.get("/noon/api-v1/get-favorite-posts", (req: Request, res: Response) => getFavoritePostsResolver(res));
+app.get("/noon/api-v1/get-liked-posts", (req: Request, res: Response) => getLikedPostsResolver(res));
 
 /**
  * Routes - PATCH method

@@ -1,7 +1,14 @@
 import React from "react";
 import styles from "./index.module.scss";
 import { Post } from "@/types";
-import { PostFeedCell, FavoritePostsCell, Divider, EmptyContainer, LoadingSpinner, ErrorBlock } from "..";
+import {
+  PostFeedCell, 
+  LikedPostsCell, 
+  Divider, 
+  EmptyContainer, 
+  LoadingSpinner, 
+  ErrorBlock
+} from "..";
 
 type PostFeedCellComponentTypeProps = {
   postItemCellComponentType: "POST_FEED_CELL";
@@ -9,18 +16,18 @@ type PostFeedCellComponentTypeProps = {
   likePostFunc: Function;
 }
 
-type FavoritePostsCellComponentTypeProps = {
-  postItemCellComponentType: "FAVORITE_POSTS_CELL";
+type LikedPostsCellComponentTypeProps = {
+  postItemCellComponentType: "LIKED_POSTS_CELL";
   postItems: Array<Post> | null;
   dislikePostFunc: Function;
 }
 
 type Props = {
-  postRefetchFunc: Function;
+  postRefetchFunc: () => Promise<void>;
   isLoading: boolean;
   isError: boolean;
 } & (
-  PostFeedCellComponentTypeProps | FavoritePostsCellComponentTypeProps
+  PostFeedCellComponentTypeProps | LikedPostsCellComponentTypeProps
 );
 
 const RowLayout = (props: Props) => {
@@ -57,14 +64,14 @@ const RowLayout = (props: Props) => {
                 </div>
               ))
             ))}
-            {postItemCellComponentType === "FAVORITE_POSTS_CELL" && (isError ? (
+            {postItemCellComponentType === "LIKED_POSTS_CELL" && (isError ? (
               <div className={styles.errorBlockContainer}>
                 <ErrorBlock label="Unable to retrieve liked posts" />
               </div>
             ) : (
               (postItems ? postItems.map((post, index) => (
                   <div key={index}>
-                    <FavoritePostsCell
+                    <LikedPostsCell
                       postDetails={post}
                       dislikePostFunc={props.dislikePostFunc}
                       postRefetchFunc={postRefetchFunc}

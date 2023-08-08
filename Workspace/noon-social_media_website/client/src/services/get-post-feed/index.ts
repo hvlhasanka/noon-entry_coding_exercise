@@ -1,4 +1,4 @@
-import Axios from "axios";
+import axios from "axios";
 import config from "@/configs/development";
 import { Post } from "@/types";
 import { getPostFeedPathname } from "@/pathnames";
@@ -12,7 +12,7 @@ const getPostFeed = async (): Promise<SuccessResponse | ErrorResponse> => {
   let postFeed: Array<Post> = [];
   let resError: any;
 
-  await Axios.get(`${apiBaseUrl}${getPostFeedPathname}`).then(response => {
+  await axios.get(`${apiBaseUrl}${getPostFeedPathname}`).then(response => {
     postFeed = response.data;
   }).catch(error => {
     resError = error;

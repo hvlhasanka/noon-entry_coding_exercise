@@ -1,11 +1,11 @@
 const getPostFeedPathname = "/get-post-feed";
-const getFavoritePostsPathname = "/get-favorite-posts";
+const getLikedPostsPathname = "/get-liked-posts";
 const likePostPathname = "/like-post";
 const dislikePostPathname = "/dislike-post";
 
 export {
   getPostFeedPathname,
-  getFavoritePostsPathname,
+  getLikedPostsPathname,
   likePostPathname,
   dislikePostPathname,
 };
