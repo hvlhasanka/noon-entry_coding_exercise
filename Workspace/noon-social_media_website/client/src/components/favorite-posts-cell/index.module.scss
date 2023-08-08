@@ -1,0 +1,64 @@
+@import "/src/styles/variables";
+
+/* CONTAINER */
+.favoritePostsCellContainer {
+  width: 100%;
+  height: 100%;
+}
+
+/* HEADER */
+.favoritePostsCellHeader {
+  width: 100%;
+  height: 3vh;
+}
+
+.favoritePostsCellAccountDetails {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  padding-top: 2%;
+  padding-left: 3%;
+  padding-bottom: 3%;
+}
+
+.favoritePostsCellAccountUsername {
+  padding-top: 1%;
+  font-size: 1.5vh;
+  font-family: $defaultFontFamily;
+}
+
+.favoritePostsCellBody {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  margin: 5%;
+  margin-top: 7%;
+}
+
+.favoritePostsCellPostImage {
+  width: 25%;
+  height: 25%;
+}
+
+.favoritePostsCellPostDetails {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  gap: 4px;
+}
+
+.favoritePostsCellPostHeading {
+  font-family: $defaultFontFamily;
+}
+
+.favoritePostsCellPostPrice {
+  font-family: $defaultFontFamily;
+  font-weight: bold;
+}
+
+.favoritePostsCellDislikeButton {
+  position: absolute;
+  right: 0;
+  margin-top: 6%;
+}
