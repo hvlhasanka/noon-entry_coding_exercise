@@ -1,3 +1,7 @@
+type Configs = {
+  apiBaseUrl: string;
+}
+
 type Account = {
   accountUsername: string;
   accountProfileImageUrl: string;
@@ -16,5 +20,6 @@ type Post = {
 } & Account;
 
 export type {
+  Configs,
   Post,
 };

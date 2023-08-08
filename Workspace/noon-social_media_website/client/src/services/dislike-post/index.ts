@@ -1,11 +1,11 @@
 import axios from "axios";
-import config from "@/configs/development";
+import configs from "@/configs";
 import { dislikePostPathname } from "@/pathnames";
 
 type SuccessResponse = [boolean | string];
 type ErrorResponse = [boolean, any];
 
-const { apiBaseUrl } = config;
+const { apiBaseUrl } = configs;
 
 const dislikePost = async (id: number): Promise<SuccessResponse | ErrorResponse> => {
   let responseData: any;

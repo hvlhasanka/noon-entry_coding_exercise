@@ -1,7 +1,7 @@
 import { Configs } from "@/types";
 
 const configs: Configs = {
-  apiBaseUrl: "http://localhost:8080/noon/api-v1",
+  apiBaseUrl: "https://noon-api-v1.onrender.com/noon/api-v1",
 };
 
 export default configs;

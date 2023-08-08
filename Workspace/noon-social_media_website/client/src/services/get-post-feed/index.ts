@@ -1,12 +1,12 @@
 import axios from "axios";
-import config from "@/configs/development";
+import configs from "@/configs";
 import { Post } from "@/types";
 import { getPostFeedPathname } from "@/pathnames";
 
 type SuccessResponse = [boolean, Array<Post>];
 type ErrorResponse = [boolean, any];
 
-const { apiBaseUrl } = config;
+const { apiBaseUrl } = configs;
 
 const getPostFeed = async (): Promise<SuccessResponse | ErrorResponse> => {
   let postFeed: Array<Post> = [];
