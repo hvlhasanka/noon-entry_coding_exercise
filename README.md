@@ -107,7 +107,7 @@ As shown in the below table, commits were pushed incrementally, <br/>
 | v1 | Group 1 - Documentation | Design low-fidelity wireframes |
 | v1 | Group 2 - Back-end | Setup NodeJS server application |
 | v1 | Group 3 - Front-end | Setup NextJS client application |
-<p align="center">Table ##: Git Commit Strategy 
+<p align="center">Table 7.1: Git Commit Strategy 
 
 ### 8. Credits -
 Documentation and source code in this reponsitory was development by H.V.L.Hasanka.
