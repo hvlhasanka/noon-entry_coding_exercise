@@ -35,7 +35,7 @@
     "accountProfileImageUrl": "https://raw.githubusercontent.com/hvlhasanka/noon-entry_coding_exercise/main/Workspace/dummy-data-assets/images/profile-images/sample-three.png",
     "postImageUrl": "https://raw.githubusercontent.com/hvlhasanka/noon-entry_coding_exercise/main/Workspace/dummy-data-assets/images/post-images/sample-three.jpg",
     "postHeading": "Sample product three",
-    "postPrice": 59.9,
+    "postPrice": 59.99,
     "noOfLikes": 2,
     "postDescription": "Sample description of this sample product three",
     "postHashtags": "#sample #hashtag #product #three #sampleproductthree",

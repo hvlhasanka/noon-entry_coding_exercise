@@ -42,6 +42,8 @@
 </p>
 <p align="center">Figure 1.5: Image by <a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Smashicons - Flaticon</a></p>
 
+<hr>
+
 ### 2. Dummy data post images
 
 2.1. Workspace/dummy-data-assets/images/post-images/sample-one.jpg => 
@@ -84,6 +86,8 @@
 </p>
 <p align="center">Figure 2.5: Image by <a href="https://www.freepik.com/free-photo/levitating-music-headphones-display_33140234.htm#query=products&position=0&from_view=search&track=sph">Freepik</a></p>
 
+<hr>
+
 ### 3. Client-side NextJS app images
 
 3.1. Workspace/noon-social_media_website/client/src/assets/images/dislike.png =>
@@ -125,6 +129,8 @@
   </kbd>
 </p>
 <p align="center">Figure 3.5: Image by <a href="https://www.flaticon.com/free-icons/heart" title="heart icons">Heart icons created by Roundicons - Flaticon</a></p>
+
+<hr>
 
 ### 4. Client-side NextJS app loading spinner
 
