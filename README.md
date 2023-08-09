@@ -29,8 +29,8 @@ There are two web pages to this web application,
 1. Landing page => Home => Shows the post feed and each post has a "Like" button
 2. Liked page => Shows the posts that were liked by the current end-user and each post has a "Dislike" button
 
-#### 1.1. App host configurations -
-- Client-side NextJS application => <a href="https://noon-social-network.netlify.app">noon - Social Network</a> -> [![Netlify Status](https://api.netlify.com/api/v1/badges/500250a6-6b83-42e7-aed6-cd3a42f421b1/deploy-status)](https://app.netlify.com/sites/noon-social-network/deploys) <br>
+#### 1.1. App hosting configurations -
+- Client-side NextJS application => <a href="https://noon-social-network.netlify.app">noon - Social Network</a> [![Netlify Status](https://api.netlify.com/api/v1/badges/500250a6-6b83-42e7-aed6-cd3a42f421b1/deploy-status)](https://app.netlify.com/sites/noon-social-network/deploys)<br>
 - Server-side Express (NodeJS) application => <a href="https://noon-api-v1.onrender.com">noon api v1</a><br>
   - Eg: <a href="https://noon-api-v1.onrender.com/noon/api-v1/get-post-feed">get-post-feed endpoint</a> 
 
@@ -65,6 +65,9 @@ Flow of data -<br>
 * Main Dependencies -
   * [Axios](https://github.com/axios/axios) - Library to fetch data from an API service.
   * [React-icons](https://react-icons.github.io/react-icons) - Icon library containing all icons from several third-party icon packs.
+* App Hosting -
+  * Client-side (Front end) NextJS app - Hosted on [Netlify](https://www.netlify.com)
+  * Server-side (Back end) Express (NodeJS) app - Hosted on [Render](https://render.com)
 
 <hr>
 
