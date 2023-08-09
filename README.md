@@ -5,7 +5,7 @@
 ## Table of Contents
 
 [1. App Description](#1-app-description--)<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;[1.1. App host configurations](#11-app-host-configurations--)<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;[1.1. App hosting configurations](#11-app-hosting-configurations--)<br>
 [2. System Architecture](#2-system-architecture--)<br>
 [3. Consumed Technologies, Tools and Dependencies](#3-consumed-technologies-tools-and-dependencies--)<br>
 [4. Installation (NextJS and Express apps)](#4-installation-nextjs-and-express-apps--)<br>
