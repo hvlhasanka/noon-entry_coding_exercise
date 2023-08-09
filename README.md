@@ -90,7 +90,7 @@ npm run start:dev
 
 ### 5. Managing the Source Code -
 #### Client-side app (NextJS)
-Client-side app's source code is located in =>
+Client-side app's source code is located in the following directory =>
 ```
   Workspace -> noon-social_media_website -> client
 ```
@@ -104,7 +104,7 @@ Source code structure =>
 
 #### Server-side app (Express) (NodeJS)
 
-Server-side app's source code is located in =>
+Server-side app's source code is located in the following directory =>
 ```
   Workspace -> noon-social_media_website -> server
 ```
