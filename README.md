@@ -14,8 +14,8 @@
   &nbsp;&nbsp;&nbsp;&nbsp;[6.1. Functional features of the Web Application](#61-functional-features-of-the-web-application--)<br>
   &nbsp;&nbsp;&nbsp;&nbsp;[6.2. Non-functional features of the Web Application](#62-non-functional-features-of-the-web-application--)<br>
   &nbsp;&nbsp;&nbsp;&nbsp;[6.3. Screenshots of the noon Social Network Website (Web App)](#63-screenshots-of-the-noon-social-network-website-web-app--)<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;[6.3.1. Mobile view (414 x 896) (iPhone XR)](#631-mobile-view-414-x-896-iphone-xr-)<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;[6.3.2. Desktop view (1584 x 1228)](#632-desktop-view-1584-x-1228-)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[6.3.1. Mobile view (414 x 896 resolution) (iPhone XR)](#631-mobile-view-414-x-896-resolution-iphone-xr-)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[6.3.2. Desktop view (1584 x 1228 resolution)](#632-desktop-view-1584-x-1228-resolution-)<br>
 [7. Application Designing - Low-fidelity Wireframes](#7-application-designing---low-fidelity-wireframes)<br>
 [8. Git Commit Strategy](#8-git-commit-strategy--)<br>
 [9. Credits](#9-credits--)<br>
@@ -133,7 +133,7 @@ Source code component hierarchy =>
   * Code Scalability
   * Error handling
   #### 6.3. Screenshots of the noon Social Network Website (Web App) -
-  ### 6.3.1. Mobile view (414 x 896) (iPhone XR) =>
+  ### 6.3.1. Mobile view (414 x 896 resolution) (iPhone XR) =>
   #### 6.3.1.1. Landing (Home) page loading screen - During the data retrieval (fetch) from the API
 <p align="center">
   <kbd>
@@ -190,7 +190,7 @@ Source code component hierarchy =>
 </p>
 <p align="center">Figure 6.3.1.7.1: Mobile view - Liked page error screen - API data retrieval failed (Error handled)</p>
 
-  ### 6.3.2. Desktop view (1584 x 1228) =>
+  ### 6.3.2. Desktop view (1584 x 1228 resolution) =>
   #### 6.3.2.1. Landing (Home) page loading screen - During the data retrieval (fetch) from the API
 <p align="center">
   <kbd>
