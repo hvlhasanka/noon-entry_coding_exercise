@@ -70,15 +70,15 @@ Flow of data -<br>
 
 ### 4. Installation (NextJS and Express apps) -
 In order to run the applications (NextJS and Express apps), their node modules are required.<br>
-1. To download the associated node modules, go to the project file directory via the command prompt (CMD) and run the below command =>
+1. To download the associated node modules and prepare the build files, go to the project file directory via the command prompt (CMD) and run the below command =>
 ```
-npm install
+npm install && npm run build
 ```
-2. After the node module installation, to run the web application, run the below command =>
+2. After the node module installation and the build files are generated, to run the apps, run the below command =>
 ```
 npm start
 ```
-For development purposes =>
+To run the apps for development purposes =>
 ```
 npm run start:dev
 ```
