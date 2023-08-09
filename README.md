@@ -108,7 +108,7 @@ Server-side app's source code is located in =>
 ```
   noon-entry_coding_exercise -> Workspace -> noon-social_media_website -> server
 ```
-Source code component hierarchy =>
+Source code structure =>
 <p align="center">
   <kbd>
       <img src="./Documentation/Source-code-Structure/source-code-structure-server-side-app.png" />
