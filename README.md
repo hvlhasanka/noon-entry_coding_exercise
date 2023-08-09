@@ -5,11 +5,17 @@
 ## Table of Contents
 
 [1. App Description](#1-app-description--)<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;[1.1. App host configurations](#11-app-host-configurations--)<br>
 [2. System Architecture](#2-system-architecture--)<br>
 [3. Consumed Technologies, Tools and Dependencies](#3-consumed-technologies-tools-and-dependencies--)<br>
 [4. Installation (NextJS and Express apps)](#4-installation-nextjs-and-express-apps--)<br>
 [5. Managing the Source Code](#5-managing-the-source-code--)<br>
 [6. Usage](#6-usage--)<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;[6.1. Functional features of the Web Application](#61-functional-features-of-the-web-application--)<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;[6.2. Non-functional features of the Web Application](#62-non-functional-features-of-the-web-application--)<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;[6.3. Screenshots of the noon Social Network Website (Web App)](#63-screenshots-of-the-noon-social-network-website-web-app--)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;[6.3.1. Mobile view (414 x 896) (iPhone XR)](#631-mobile-view-414-x-896-iphone-xr-)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;[6.3.2. Desktop view (1584 x 1228)](#632-desktop-view-1584-x-1228-)<br>
 [7. Application Designing - Low-fidelity Wireframes](#7-application-designing---low-fidelity-wireframes)<br>
 [8. Git Commit Strategy](#8-git-commit-strategy--)<br>
 [9. Credits](#9-credits--)<br>
@@ -23,9 +29,9 @@ There are two web pages to this web application,
 1. Landing page => Home => Shows the post feed and each post has a "Like" button
 2. Liked page => Shows the posts that were liked by the current end-user and each post has a "Dislike" button
 
-#### 1.1. App host configuration -
-- Client-side application => <a href="https://noon-social-network.netlify.app">noon - Social Network</a> -> [![Netlify Status](https://api.netlify.com/api/v1/badges/500250a6-6b83-42e7-aed6-cd3a42f421b1/deploy-status)](https://app.netlify.com/sites/noon-social-network/deploys) <br>
-- Server-side application => <a href="https://noon-api-v1.onrender.com">noon api v1</a><br>
+#### 1.1. App host configurations -
+- Client-side NextJS application => <a href="https://noon-social-network.netlify.app">noon - Social Network</a> -> [![Netlify Status](https://api.netlify.com/api/v1/badges/500250a6-6b83-42e7-aed6-cd3a42f421b1/deploy-status)](https://app.netlify.com/sites/noon-social-network/deploys) <br>
+- Server-side Express (NodeJS) application => <a href="https://noon-api-v1.onrender.com">noon api v1</a><br>
   - Eg: <a href="https://noon-api-v1.onrender.com/noon/api-v1/get-post-feed">get-post-feed endpoint</a> 
 
 <hr>
@@ -37,6 +43,12 @@ There are two web pages to this web application,
   </kbd>
 </p>
 <p align="center">Figure 2.1: System Architecture Diagram</p>
+
+This system handles it's data transfer using the Client/server architecture.
+Flow of data -<br>
+* The Client-side NextJS app requests data from the Server-side Express (NodeJS) app through the REST API.
+* The Server-side app will query the data store (database) and return the requested data as a response.
+* [The current system doesn't contain a database and the data is held in the code-level in the Server-side app.]
 
 <hr>
 
@@ -121,14 +133,14 @@ Source code component hierarchy =>
   * Code Scalability
   * Error handling
   #### 6.3. Screenshots of the noon Social Network Website (Web App) -
-  ##### 6.3.1. Mobile view (414 x 896) (iPhone XR) =>
-  #### 6.3.1.1. Landing (Home) page loading screen
+  ### 6.3.1. Mobile view (414 x 896) (iPhone XR) =>
+  #### 6.3.1.1. Landing (Home) page loading screen - During the data retrieval (fetch) from the API
 <p align="center">
   <kbd>
       <img src="./Documentation/Website-Screenshots/Mobile-View/screenshot-1.png" width="50%" />
   </kbd>
 </p>
-<p align="center">Figure 6.3.1.1.1: Mobile view - Landing (Home) page loading screen</p>
+<p align="center">Figure 6.3.1.1.1: Mobile view - Landing (Home) page loading screen - During the data retrieval (fetch) from the API</p>
 
   #### 6.3.1.2. Landing (Home) page
 <p align="center">
@@ -162,30 +174,30 @@ Source code component hierarchy =>
 </p>
 <p align="center">Figure 6.3.1.5.1: Mobile view - Liked page - With two liked posts</p>
 
-  #### 6.3.1.6. Landing (Home) page error screen
+  #### 6.3.1.6. Landing (Home) page error screen (Error handled)
 <p align="center">
   <kbd>
       <img src="./Documentation/Website-Screenshots/Mobile-View/screenshot-6.png" width="50%" />
   </kbd>
 </p>
-<p align="center">Figure 6.3.1.6.1: Mobile view - Landing (Home) page error screen</p>
+<p align="center">Figure 6.3.1.6.1: Mobile view - Landing (Home) page error screen - API data retrieval failed (Error handled)</p>
 
-  #### 6.3.1.7. Liked page error screen
+  #### 6.3.1.7. Liked page error screen (Error handled)
 <p align="center">
   <kbd>
       <img src="./Documentation/Website-Screenshots/Mobile-View/screenshot-7.png" width="50%" />
   </kbd>
 </p>
-<p align="center">Figure 6.3.1.7.1: Mobile view - Liked page error screen</p>
+<p align="center">Figure 6.3.1.7.1: Mobile view - Liked page error screen - API data retrieval failed (Error handled)</p>
 
-  ##### 6.3.2. Desktop view (1584 x 1228) =>
-  #### 6.3.2.1. Landing (Home) page loading screen
+  ### 6.3.2. Desktop view (1584 x 1228) =>
+  #### 6.3.2.1. Landing (Home) page loading screen - During the data retrieval (fetch) from the API
 <p align="center">
   <kbd>
       <img src="./Documentation/Website-Screenshots/Desktop-View/screenshot-1.png" width="50%" />
   </kbd>
 </p>
-<p align="center">Figure 6.3.2.1.1: Desktop view - Liked page error screen</p>
+<p align="center">Figure 6.3.2.1.1: Desktop view - Liked page error screen - During the data retrieval (fetch) from the API</p>
 
   #### 6.3.2.2. Landing (Home) page
 <p align="center">
@@ -219,21 +231,21 @@ Source code component hierarchy =>
 </p>
 <p align="center">Figure 6.3.2.5.1: Desktop view - Liked page - With two liked posts</p>
 
-  #### 6.3.2.6. Landing (Home) page error screen
+  #### 6.3.2.6. Landing (Home) page error screen (Error handled)
 <p align="center">
   <kbd>
       <img src="./Documentation/Website-Screenshots/Desktop-View/screenshot-6.png" width="50%" />
   </kbd>
 </p>
-<p align="center">Figure 6.3.2.6.1: Desktop view - Landing (Home) page error screen</p>
+<p align="center">Figure 6.3.2.6.1: Desktop view - Landing (Home) page error screen - API data retrieval (fetch) failed (Error handled)</p>
 
-  #### 6.3.2.7. Liked page error screen
+  #### 6.3.2.7. Liked page error screen (Error handled)
 <p align="center">
   <kbd>
       <img src="./Documentation/Website-Screenshots/Desktop-View/screenshot-7.png" width="50%" />
   </kbd>
 </p>
-<p align="center">Figure 6.3.2.7.1: Desktop view - Liked page error screen</p>
+<p align="center">Figure 6.3.2.7.1: Desktop view - Liked page error screen - API data retrieval (fetch) failed (Error handled)</p>
 
 <hr>
 
