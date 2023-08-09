@@ -92,7 +92,7 @@ npm run start:dev
 #### Client-side app (NextJS)
 Client-side app's source code is located in =>
 ```
-  noon-entry_coding_exercise -> Workspace -> noon-social_media_website -> client
+  Workspace -> noon-social_media_website -> client
 ```
 Source code structure =>
 <p align="center">
@@ -106,7 +106,7 @@ Source code structure =>
 
 Server-side app's source code is located in =>
 ```
-  noon-entry_coding_exercise -> Workspace -> noon-social_media_website -> server
+  Workspace -> noon-social_media_website -> server
 ```
 Source code structure =>
 <p align="center">
